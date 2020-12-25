@@ -17,18 +17,6 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:name=".AppInstallReceiver"
-            android:enabled="true">
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED"></action>
-                <!-- 一个已存在的应用程序包已经从设备上移除，包括包名（卸载监听所在的app，则无法接收到） -->
-                <action android:name="android.intent.action.PACKAGE_REMOVED" />
-                <action android:name="android.intent.action.PACKAGE_REPLACED"></action>
-                <data android:scheme="package"></data>
-            </intent-filter>
-        </receiver>
-
     </application>
 
 </manifest>

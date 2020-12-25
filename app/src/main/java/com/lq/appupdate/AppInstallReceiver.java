@@ -33,13 +33,13 @@ public class AppInstallReceiver extends BroadcastReceiver {
 
         } else if (Intent.ACTION_PACKAGE_REPLACED.equals(intent.getAction())) {
 
-            Toast.makeText(context, "有应用被替换", Toast.LENGTH_LONG).show();
-
-            if (("com.estrongs.android.pop").equals(packageName)) {
-                //监测到ES文件浏览器 安装了新的版本
-                Log.i(TAG, "onReceive: 监测到ES文件浏览器 安装了新的版本  ");
-                AppUpdateUtils.INSTANCE.dismissUpdateDialog();
-            }
+//            Toast.makeText(context, "有应用被替换", Toast.LENGTH_LONG).show();
+//
+//            if (("com.estrongs.android.pop").equals(packageName)) {
+//                //监测到ES文件浏览器 安装了新的版本
+//                Log.i(TAG, "onReceive: 监测到ES文件浏览器 安装了新的版本  ");
+//                AppUpdateUtils.INSTANCE.dismissUpdateDialog();
+//            }
         }
     }
 
